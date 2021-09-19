@@ -1,0 +1,619 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	font-family: 'Jost', sans-serif;
+}
+
+:root {
+        --global--color-darkblue: #171a24;
+        --global--color-blue: #1e222f;
+        --global--color-grey: #bcbcbc;
+        --global--color-yellow: #ffda68;
+        --global--color-lightpink: #cb6686;
+        --global--color-white: #ffffff;
+        --global--color-pink: #ff687d;
+        --global--color-lightblack: #11141b;
+        --global--color-purple: #745984;
+        --global--color-light: #f8f8f8;
+        --global--color-lightgrey: #808080;
+        --global--color-black: #181b22;
+    }
+::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+}
+input {
+    width: 60%;
+    background-color: cyan;
+    max-width: 840px;
+    height: 55px;
+    border-radius: 30px;
+    border:none;
+    padding: 0 30px;
+    outline: none;
+    font-size:16px;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    display: block;
+}
+h1 {
+    text-align: center;
+    color: #010f2e;
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 22px!important;
+    color: #010f2e;
+}
+.top-sites-title {
+	text-decoration: none;
+	color: #1c233d;
+	font-weight: 600;
+}
+.top-sites-title:hover {
+	color: #a756f9;
+}
+
+
+.hero {
+	background: url('../img/work-bg-img.png');
+    background-color: #f4e7f8;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	padding-left: 10%;
+	padding-right: 10%;
+	box-sizing: border-box;
+}
+
+.btn-group {
+    float: right;
+    margin-top: 30px;
+}
+.btn-secondary {
+    background-color: #1c233d!important; 
+    border-color: #1c233d!important;
+    color: #fff;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+	background: #f4e7f8!important;
+}
+.button.btn.btn-secondary.show {
+	background: #f4e7f8!important;
+	border-color: #f4e7f8!important;
+}
+.dropdown-item.active, .dropdown-item:active {
+  background: #a756f9!important;
+  color: #212529;
+}
+
+::-webkit-scrollbar-track{
+	border: none;
+}
+
+::-webkit-scrollbar{
+	width: 6px;
+	background-color: #fff5f2;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #a756f9;
+}
+
+ul {
+	display: flex;
+}
+ul li a {
+	padding-right: 30px;
+}
+
+.top-sites img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 50%;
+}
+
+.top-sites {
+	margin-top: 60px!important;
+	margin-bottom: 20px;
+	border: 2px solid #00000047;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.most-viewed {
+	border: 2px solid #00000047;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+.most-viewed img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 50%;
+}
+
+.popular-search {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+.popular-search a {
+	text-decoration: none;
+	color: #a756f9;
+	font-weight: 600;
+}
+.popular-search a:hover {
+	color: #1c233d;
+
+}
+
+.search-btn {
+        position: absolute;
+        background: purple;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        padding: 19px 38px;
+        border: none;
+        left: inherit;
+        bottom: 0px;
+        right: 0;
+        z-index: 0;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+    }
+    .search-btn:hover{
+        text-decoration: none;
+        color: #fff;
+        background: #1c233d;
+    }
+
+    .subscribe-form{ 
+    	margin-top: 30px;
+        position: relative;
+    }
+
+    .subscribe-form .form-group {
+        position: relative;
+        background: #fff;
+        border-radius: 50px;
+        border: 1px solid #e8eaf1;
+    }
+    .field-background{
+        position: relative;
+        background: var(--global--color-light);
+    }
+    .field-background .field{
+        padding: 60px 90px;
+        background: var(--global--color-white);
+        border-radius: 20px;
+        top: -112px;
+        position: relative;
+        box-shadow: 0 30px 30px rgba(30, 34, 47, 0.03);
+        margin: 0px;
+        position: absolute;
+        z-index: 1;
+    }
+    .field-background .field:hover {
+        box-shadow: 0 30px 30px rgba(30, 34, 47, 0.1);
+        transform: translateY(-5px);
+    }
+    .subscribe-form .form-group {
+        position: relative;
+        background: var(--global--color-white);
+        border-radius: 50px;
+        border: 1px solid #e8eaf1;
+    }
+    .subscribe-form .form-control {
+        background: var(--global--color-white);
+        border-radius: 50px;
+        position: relative;
+        padding: 28px 0px 28px 39px;
+        border: none;
+        color: #808080;
+        font-size: 16px;
+    }
+    .search-btn {
+        position: absolute;
+        background: #a756f9;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--global--color-white);
+        text-decoration: none;
+        border-radius: 50px;
+        padding: 19px 38px;
+        border: none;
+        left: inherit;
+        bottom: 0px;
+        right: 0;
+        z-index: 0;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+    }
+    .search-btn:hover{
+        text-decoration: none;
+        color: var(--global--color-white);
+        box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    }
+    .price li {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--global--color-black);
+        margin-right: 41px;
+    }
+    .price {
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    .price li:first-child {
+        padding-left: 0px;
+    }
+    .price li:last-child{
+        padding-right: 0px;
+    }
+    .subscribe-form{ 
+        position: relative;
+    }
+    .form-control:focus{
+        box-shadow: none;
+    }
+    button:focus {
+        outline: none;
+    }
+
+
+/*==========Bubbles Animation CSS Start==========*/
+.bubbles_wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 990;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 20%
+    }
+    to {
+        margin-top: -30%
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 20%
+    }
+    to {
+        margin-top: -30%
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 20%
+    }
+    to {
+        margin-top: -30%
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left: 0
+    }
+    to {
+        margin-left: 25px
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left: 0
+    }
+    to {
+        margin-left: 25px
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left: 0
+    }
+    to {
+        margin-left: 25px
+    }
+}
+
+.x1 {
+    -webkit-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 6%;
+    top: 45%;
+    background: #a756f9;
+}
+
+.x2 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    left: 5%;
+    top: 80%;
+    background: #fc9d44;
+}
+
+.x3 {
+    -webkit-animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 10%;
+    top: 40%;
+    background: #a756f9;
+}
+
+.x4 {
+    -webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    left: 20%;
+    top: 0;
+    background: #fc9d44;
+}
+
+.x5 {
+    -webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    left: 30%;
+    top: 50%;
+    background: #a756f9;
+}
+
+.x6 {
+    -webkit-animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 50%;
+    top: 0;
+    background: #fc9d44;
+}
+
+.x7 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 65%;
+    top: 70%;
+    background: #a756f9;
+}
+
+.x8 {
+    -webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    left: 80%;
+    top: 10%;
+    background: #fc9d44;
+}
+
+.x9 {
+    -webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    left: 90%;
+    top: 50%;
+    background: #a756f9;
+}
+
+.x10 {
+    -webkit-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 80%;
+    top: 80%;
+    background: #fc9d44;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: none;
+    width: 5px;
+    height: 5px;
+}
+/*==========Bubbles Animation CSS End==========*/
+
+
+
+
+.subscribe__icon img {
+  position: absolute;
+  background: transparent;
+  animation: subscribeIcon 0.6s linear 0s infinite alternate;
+  -webkit-animation: subscribeIcon 0.6s linear 0s infinite alternate;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.subscribe__icon img.ps {
+  top: 69%;
+  left: 19%;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
+  -moz-transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
+  -ms-transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
+  -o-transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
+  transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .subscribe__icon img.ps {
+    left: 5%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .subscribe__icon img.ps {
+    left: 5%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .subscribe__icon img.ps {
+    left: 5%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .subscribe__icon img.ps {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .subscribe__icon img.ps {
+    display: none;
+  }
+}
+.subscribe__icon img.wp {
+  top: 40%;
+  left: 25%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .subscribe__icon img.wp {
+    left: 14%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .subscribe__icon img.wp {
+    top: 35%;
+    left: 9%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .subscribe__icon img.wp {
+    top: 30%;
+    left: 7%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .subscribe__icon img.wp {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .subscribe__icon img.wp {
+    display: none;
+  }
+}
+.subscribe__icon img.html {
+  right: 17%;
+  top: 30%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .subscribe__icon img.html {
+    right: 13%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .subscribe__icon img.html {
+    right: 5%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .subscribe__icon img.html {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .subscribe__icon img.html {
+    display: none;
+  }
+}
+.subscribe__icon img.f {
+  right: 5%;
+  top: 55%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .subscribe__icon img.f {
+    right: 4%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .subscribe__icon img.f {
+    top: 46%;
+    right: 2%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .subscribe__icon img.f {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .subscribe__icon img.f {
+    display: none;
+  }
+}
+.subscribe__icon img.man {
+  right: 22%;
+  bottom: 7%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  border-radius: 0%;
+  box-shadow: none !important;
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .subscribe__icon img.man {
+    right: 14%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .subscribe__icon img.man {
+    right: 9%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .subscribe__icon img.man {
+    right: 2%;
+    bottom: 2%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .subscribe__icon img.man {
+    right: 5%;
+    bottom: 2%;
+  }
+}
+@media (max-width: 575px) {
+  .subscribe__icon img.man {
+    right: 5%;
+    bottom: 2%;
+  }
+}
+
+.doodle {
+  margin-right: auto;
+  margin-left: auto;
+  height: 120px;
+  display: block;
+}
+
+@media only screen and (max-width: 575px) {
+  .doodle {
+    height: 60px;
+  }
+}
